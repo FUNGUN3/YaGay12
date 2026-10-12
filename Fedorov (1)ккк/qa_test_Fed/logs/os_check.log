@@ -1,0 +1,9 @@
+=== Проверка ОС ===
+Дата: 2026-09-14 13:06:47
+[OK] ROSA: MOS Desktop 12 release 2021.1 for x86_64
+Ядро: 6.12.74-generic-13rosa2021.1-x86_64
+Свободно на /: 15G
+Load average (1m): 0.19
+[OK] Сервис sshd активен
+[FAIL] Сервис crond не активен
+[OK] Сервис NetworkManager активен

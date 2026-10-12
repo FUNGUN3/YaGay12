@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практика по событиям</title>
+</head>
+<body>
+    <h1>Обработчики событий</h1>
+
+    <button id="btn1">Кликни меня</button>
+    <button id="btn2">Кликни меня тоже</button>
+    <button id="btn3">А меня кликни</button>
+<div>
+    <p id="statusDisplay">Статус: выключено</p>
+    <button id="stateBtn">Включить</button>
+    <button id="resetBtn">Сброс</button>
+</div>
+
+<ul id="todoList">
+    <li data-id="1">Задача 1</li>
+    <li data-id="2">Задача 2</li>
+    <li data-id="3">Задача 3</li>
+</ul>
+<button id="addTodoBtn">Добавить задачу</button>
+<form id="userForm">
+    <input type="text" id="nameInput" placeholder="Имя" required>
+    <input type="email" id="emailInput" placeholder="Email" required>
+    <input type="number" id="ageInput" placeholder="Возраст">
+    <button type="submit" id="submitBtn">Отправить</button>
+    <button type="reset" id="resetFormBtn">Очистить</button>
+</form>
+<div id="formStatus"></div>
+<div id="multiEventArea">
+    <p>Наведите мышку или нажмите клавиши</p>
+    <div id="eventDisplay">Ожидание события...</div>
+    <button id="clearBtn">Очистить</button>
+</div>
+<div id="stateMachine">
+    <h3>Машина состояний</h3>
+    <div id="machineDisplay">Состояние: init</div>
+    <div>
+        <button id="nextBtn">Далее</button>
+        <button id="prevBtn">Назад</button>
+        <button id="resetMachineBtn">Сброс</button>
+    </div>
+    <div id="historyDisplay">История: init</div>
+</div>
+    <!-- Здесь будут наши элементы -->
+
+    <script src="script.js"></script>
+</body>
+</html>

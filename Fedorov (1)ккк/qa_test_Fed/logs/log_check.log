@@ -1,0 +1,21 @@
+=== Анализ журналов ===
+--- Последние 10 ошибок (journalctl) ---
+-- Journal begins at Mon 2026-06-01 18:48:41 MSK, ends at Mon 2026-09-14 13:06:47 MSK. --
+сен 14 12:30:28 mos-hc9dxz konsole[5424]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/port_check.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5428]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/run_all.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5428]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/run_all.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5436]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/web_test.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5436]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/web_test.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5432]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/setup.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5432]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/setup.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5437]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/integrity_check.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5437]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/integrity_check.sh"
+сен 14 13:06:47 mos-hc9dxz sshd[7455]: error: send_error: write: Broken pipe
+--- Неудачные логины ---
+0
+--- Размеры /var/log ---
+129M	/var/log/journal
+1,9M	/var/log/anaconda
+1,1M	/var/log/dnf.log.1
+940K	/var/log/dnf.librepo.log
+424K	/var/log/dnf.log

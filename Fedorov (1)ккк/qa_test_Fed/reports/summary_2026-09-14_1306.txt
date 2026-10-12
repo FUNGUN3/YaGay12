@@ -1,0 +1,57 @@
+======================================
+ СВОДНЫЙ ОТЧЁТ ТЕСТИРОВАНИЯ
+ Дата: 2026-09-14 13:06:47
+ Хост: mos-hc9dxz
+======================================
+=== Проверка ОС ===
+Дата: 2026-09-14 13:06:47
+[OK] ROSA: MOS Desktop 12 release 2021.1 for x86_64
+Ядро: 6.12.74-generic-13rosa2021.1-x86_64
+Свободно на /: 15G
+Load average (1m): 0.19
+[OK] Сервис sshd активен
+[FAIL] Сервис crond не активен
+[OK] Сервис NetworkManager активен
+=== Проверка портов на 127.0.0.1 ===
+[CLOSED] HTTP (:80)
+[CLOSED] PostgreSQL (:5432)
+[OPEN] SSH (:22)
+[CLOSED] HTTPS (:443)
+[CLOSED] MySQL (:3306)
+=== Тест веб-приложения: http://localhost ===
+[FAIL] Главная страница (http://localhost) → 000 (ожидалось 200)
+[FAIL] robots.txt (http://localhost/robots.txt) → 000 (ожидалось 200)
+[FAIL] Несуществующая страница (http://localhost/nonexist) → 000 (ожидалось 404)
+Время отклика: 0.000174s
+[OK] Отклик в норме
+Итого: PASS=0 FAIL=3
+=== Проверка конфигураций ===
+--- Файлы с правами 777 или world-writable в /etc ---
+--- Хэши конфигураций ---
+5c2a2daa40408b755a97f664026693ebe5dbd5f5e59686ceeed4c4e1e2ac9856  /etc/passwd
+666e9baa9521035180e7ac0c10e01d90ac5b3a85734362b6b241bfb63773ff37  /etc/group
+42c60aee9ac2254ea721673592386164914480669c06c2fad31123344fe71a7f  /etc/hosts
+34e070cb0b43bde68fe57c88d270b8b76466c305e39fe2ff1122d5f27fb95657  /etc/fstab
+--- Права /etc/sudoers ---
+-r--r----- 1 root root 3253 июл  4  2025 /etc/sudoers
+=== Анализ журналов ===
+--- Последние 10 ошибок (journalctl) ---
+-- Journal begins at Mon 2026-06-01 18:48:41 MSK, ends at Mon 2026-09-14 13:06:47 MSK. --
+сен 14 12:30:28 mos-hc9dxz konsole[5424]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/port_check.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5428]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/run_all.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5428]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/run_all.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5436]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/web_test.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5436]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/web_test.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5432]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/setup.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5432]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/setup.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5437]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/integrity_check.sh"
+сен 14 12:30:28 mos-hc9dxz konsole[5437]: "Невозможно найти исполняемый файл:" "/home/user/Документы/Fedorov/qa_test/logs/integrity_check.sh"
+сен 14 13:06:47 mos-hc9dxz sshd[7455]: error: send_error: write: Broken pipe
+--- Неудачные логины ---
+0
+--- Размеры /var/log ---
+129M	/var/log/journal
+1,9M	/var/log/anaconda
+1,1M	/var/log/dnf.log.1
+940K	/var/log/dnf.librepo.log
+424K	/var/log/dnf.log

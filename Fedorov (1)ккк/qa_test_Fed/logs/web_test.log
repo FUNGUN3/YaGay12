@@ -1,0 +1,6 @@
+=== Тест веб-приложения: http://localhost ===
+[FAIL] Главная страница (http://localhost) → 000 (ожидалось 200)
+[FAIL] robots.txt (http://localhost/robots.txt) → 000 (ожидалось 200)
+[FAIL] Несуществующая страница (http://localhost/nonexist) → 000 (ожидалось 404)
+Время отклика: 0.000174s
+Итого: PASS=0 FAIL=3

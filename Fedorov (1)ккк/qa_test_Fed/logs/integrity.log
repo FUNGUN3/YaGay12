@@ -1,0 +1,9 @@
+=== Проверка конфигураций ===
+--- Файлы с правами 777 или world-writable в /etc ---
+--- Хэши конфигураций ---
+5c2a2daa40408b755a97f664026693ebe5dbd5f5e59686ceeed4c4e1e2ac9856  /etc/passwd
+666e9baa9521035180e7ac0c10e01d90ac5b3a85734362b6b241bfb63773ff37  /etc/group
+42c60aee9ac2254ea721673592386164914480669c06c2fad31123344fe71a7f  /etc/hosts
+34e070cb0b43bde68fe57c88d270b8b76466c305e39fe2ff1122d5f27fb95657  /etc/fstab
+--- Права /etc/sudoers ---
+-r--r----- 1 root root 3253 июл  4  2025 /etc/sudoers
